@@ -25,6 +25,7 @@ namespace HomeWork8_2
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
+                File.Create(path + fileName);
             }
             else if (Directory.Exists(path) && !File.Exists(path + fileName))
             {
